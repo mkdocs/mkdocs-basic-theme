@@ -1,0 +1,168 @@
+<!--
+  This Basic theme serves as an example for how to create other
+  themes by demonstrating the features with minimal HTML and CSS.
+  Comments like this will be through the code to explain briefly
+  what each feature is and point you to the MkDocs documentation
+  to find out more.
+-->
+<!DOCTYPE html>
+<head>
+
+  <!--
+    The page_title contains the title for a page as shown in the navigation.
+    Site name contains the name as defined in the mkdocs.yml
+  -->
+  <title>Page - MkDocs Basic theme</title>
+
+  <!--
+    Support custom favicon support.
+    http://www.mkdocs.org/user-guide/configuration/#site_favicon
+  -->
+  
+    <link rel="shortcut icon" href="../img/favicon.ico">
+  
+
+  <!--
+    extra_ess contains paths to CSS files in the users
+    documentation directory or a list of CSS files defined in
+    their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_css
+  -->
+  
+
+  <!--
+    To include static assets from our theme, just add
+    .. beforehand which will be the relative path to
+    the root of the documentation.
+  -->
+  <script src="../js/theme.js"></script>
+
+  <!--
+    extra_javascript contains paths to JavaScript files in the
+    users documentation directory or a list of JavaScript files
+    defined in their mkdocs.yml.
+
+    http://www.mkdocs.org/user-guide/configuration/#extra_javascript
+  -->
+  
+
+  <!--
+    Include Google Analytics tracking code.
+
+    http://www.mkdocs.org/user-guide/configuration/#google_analytics
+  -->
+  
+</head>
+
+<body>
+
+  <!--
+    Create the navigation for the documentation.
+  -->
+  <ul>
+      
+          
+              <li class="">
+                  <a href="..">Home</a>
+              </li>
+          
+
+      
+          
+              <li class="current">
+                  <a href="./">Page</a>
+              </li>
+          
+
+      
+          
+              <li>Sub
+                  <ul>
+                  
+                      <li class="">
+                          <a href="../sub/page/">Page</a>
+                      </li>
+                  
+                  </ul>
+              </li>
+          
+
+      
+  </ul>
+
+  <hr/>
+
+  <!--
+    Create a search form that sends the user to the search.html file - this is
+    the other file in the template which adds search to the theme. The only
+    requirement here is that there is a text input with the name 'q' and the
+    action and methods match below.
+  -->
+  <div role="search">
+    <form action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" />
+    </form>
+  </div>
+
+  <hr/>
+
+  <!--
+    Implement the previous and next links to cycle through the pages.
+  -->
+  
+    <div>
+      
+        <a href="../sub/page/" title="Page"/>Next Page</a>
+      
+      
+        <a href=".." title="Home">Previous Page</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <li>Page</li>
+
+  <hr/>
+
+  
+    
+      <a href="https://github.com/d0ugal/mkdocs-basic-theme"> Edit on GitHub</a>
+    
+  
+
+  <hr/>
+
+  <ul>
+  
+      <li><a href="#testing-page">Testing Page</a></li>
+      
+  
+  </ul>
+
+  <hr/>
+
+  
+    <h1 id="testing-page">Testing Page</h1>
+<p>This page exists simply to demonstrate sub pages with the theme.</p>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+  <!--
+  MkDocs version      : 0.13.0.dev
+  Docs Build Date UTC : 2015-04-24 22:45:46.065661
+  -->
+
+</body>
+</html>
