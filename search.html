@@ -55,7 +55,9 @@
   
 
   
-  
+  <script>var base_url = '.';</script>
+  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
+
 </head>
 
 <body>
@@ -69,7 +71,7 @@
   <ul>
       
           
-              <li class="current">
+              <li class="">
                   <a href=".">Home</a>
               </li>
           
@@ -119,13 +121,6 @@
     Implement the previous and next links to cycle through the pages.
   -->
   
-    <div>
-      
-        <a href="page/" title="Page"/>Next Page</a>
-      
-      
-    </div>
-  
 
   <hr/>
 
@@ -144,21 +139,24 @@
   <h2>Show the table of contents for the current page</h2>
   <ul>
   
-      <li><a href="#mkdocs-basic-theme">MkDocs Basic Theme</a></li>
-      
-  
   </ul>
 
   <hr/>
 
   
-    <h1 id="mkdocs-basic-theme">MkDocs Basic Theme</h1>
-<p>This is a very basic theme for MkDocs with the goal of
-demonstrating all of the features with minimal HTML and CSS.</p>
-<p>The actual contents of this documentation is very minimal.
-Rather, you should look at the .html files in the <code>basic_theme</code>
-directory to see the example of the theme.</p>
-  
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" autocomplete="off">
+  </form>
+
+  <div id="mkdocs-search-results">
+    Sorry, page not found.
+  </div>
+
+
 
   <hr/>
 
@@ -166,7 +164,7 @@ directory to see the example of the theme.</p>
 
   <!--
   MkDocs version      : 0.13.0.dev
-  Docs Build Date UTC : 2015-04-25 08:21:19.422905
+  Docs Build Date UTC : 2015-04-25 08:21:19.392537
   -->
 
 </body>

@@ -1,0 +1,34 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "MkDocs Basic Theme\n\n\nThis is a very basic theme for MkDocs with the goal of\ndemonstrating all of the features with minimal HTML and CSS.\n\n\nThe actual contents of this documentation is very minimal.\nRather, you should look at the .html files in the \nbasic_theme\n\ndirectory to see the example of the theme.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#mkdocs-basic-theme", 
+            "text": "This is a very basic theme for MkDocs with the goal of\ndemonstrating all of the features with minimal HTML and CSS.  The actual contents of this documentation is very minimal.\nRather, you should look at the .html files in the  basic_theme \ndirectory to see the example of the theme.", 
+            "title": "MkDocs Basic Theme"
+        }, 
+        {
+            "location": "/page/", 
+            "text": "Testing Page\n\n\nThis page exists simply to demonstrate sub pages with the theme.", 
+            "title": "Page"
+        }, 
+        {
+            "location": "/page/#testing-page", 
+            "text": "This page exists simply to demonstrate sub pages with the theme.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/sub/page/", 
+            "text": "Testing Page\n\n\nThis page exists simply to demonstrate sub pages with the theme.", 
+            "title": "Page"
+        }, 
+        {
+            "location": "/sub/page/#testing-page", 
+            "text": "This page exists simply to demonstrate sub pages with the theme.", 
+            "title": "Testing Page"
+        }
+    ]
+}
