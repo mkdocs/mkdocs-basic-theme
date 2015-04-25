@@ -69,10 +69,16 @@
       ga('send', 'pageview');
   </script>
   {% endif %}
+
+  {% block extrahead %}
+  {% endblock %}
 </head>
 
 <body>
 
+  <h1>This is an example theme.</h1>
+
+  <h2>Generate Navigation</h2>
   <!--
     Create the navigation for the documentation.
   -->
@@ -99,6 +105,7 @@
 
   <hr/>
 
+  <h2>Support for search</h2>
   <!--
     Create a search form that sends the user to the search.html file - this is
     the other file in the template which adds search to the theme. The only
@@ -113,6 +120,7 @@
 
   <hr/>
 
+  <h2>Next and previous links</h2>
   <!--
     Implement the previous and next links to cycle through the pages.
   -->
@@ -129,20 +137,23 @@
 
   <hr/>
 
-  {% if current_page %}<li>{{ current_page.title }}</li>{% endif %}
-
-  <hr/>
-
+  <h2>Link to the source</h2>
+  <!--
+    Support repo URL
+  -->
   {% if repo_url %}
     {% if repo_name == 'GitHub' %}
       <a href="{{ repo_url }}"> Edit on GitHub</a>
     {% elif repo_name == 'Bitbucket' %}
       <a href="{{ repo_url }}"> Edit on BitBucket</a>
+    {% else %}
+      <a href="{{ repo_url }}"> Edit in Repository</a>
     {% endif %}
   {% endif %}
 
   <hr/>
 
+  <h2>Show the table of contents for the current page</h2>
   <ul>
   {% for toc_item in toc %}
       <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
@@ -159,12 +170,6 @@
   {% endblock %}
 
   <hr/>
-
-  <div role="contentinfo">
-    <p>
-    <!-- Copyright etc -->
-    </p>
-  </div>
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 
