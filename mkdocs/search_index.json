@@ -16,6 +16,46 @@
             "title": "Adapting this theme"
         }, 
         {
+            "location": "/about/contributing/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/about/contributing/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/release-notes/version-1/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Version 1"
+        }, 
+        {
+            "location": "/about/release-notes/version-1/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/release-notes/version-2/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Version 2"
+        }, 
+        {
+            "location": "/about/release-notes/version-2/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
             "location": "/user-guide/configuration/", 
             "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
             "title": "Configuration"
@@ -62,46 +102,6 @@
         }, 
         {
             "location": "/user-guide/writing-your-docs/#testing-page", 
-            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Testing Page"
-        }, 
-        {
-            "location": "/about/contributing/", 
-            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Contributing"
-        }, 
-        {
-            "location": "/about/contributing/#testing-page", 
-            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Testing Page"
-        }, 
-        {
-            "location": "/about/license/", 
-            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "License"
-        }, 
-        {
-            "location": "/about/license/#testing-page", 
-            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Testing Page"
-        }, 
-        {
-            "location": "/about/release-notes/version-1/", 
-            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Version 1"
-        }, 
-        {
-            "location": "/about/release-notes/version-1/#testing-page", 
-            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Testing Page"
-        }, 
-        {
-            "location": "/about/release-notes/version-2/", 
-            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
-            "title": "Version 2"
-        }, 
-        {
-            "location": "/about/release-notes/version-2/#testing-page", 
             "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
             "title": "Testing Page"
         }
