@@ -2,32 +2,107 @@
     "docs": [
         {
             "location": "/", 
-            "text": "MkDocs Basic Theme\n\n\nThis is a very basic theme for MkDocs with the goal of\ndemonstrating all of the features with minimal HTML and CSS.\n\n\nThe actual contents of this documentation is very minimal.\nRather, you should look at the .html files in the \nbasic_theme\n\ndirectory to see the example of the theme.", 
+            "text": "MkDocs Basic Theme\n\n\nThis is a very basic theme for MkDocs with the goal of demonstrating all of\nthe features with minimal HTML and CSS.\n\n\nAdapting this theme\n\n\nIf you want to use this theme as a base to create your own, it is best to\ndownload or fork the theme and start to modify it\n\n\nMake sure you read the MkDocs documentation regarding writing custom themes.", 
             "title": "Home"
         }, 
         {
             "location": "/#mkdocs-basic-theme", 
-            "text": "This is a very basic theme for MkDocs with the goal of\ndemonstrating all of the features with minimal HTML and CSS.  The actual contents of this documentation is very minimal.\nRather, you should look at the .html files in the  basic_theme \ndirectory to see the example of the theme.", 
+            "text": "This is a very basic theme for MkDocs with the goal of demonstrating all of\nthe features with minimal HTML and CSS.", 
             "title": "MkDocs Basic Theme"
         }, 
         {
-            "location": "/page/", 
-            "text": "Testing Page\n\n\nThis page exists simply to demonstrate sub pages with the theme.", 
-            "title": "Page"
+            "location": "/#adapting-this-theme", 
+            "text": "If you want to use this theme as a base to create your own, it is best to\ndownload or fork the theme and start to modify it  Make sure you read the MkDocs documentation regarding writing custom themes.", 
+            "title": "Adapting this theme"
         }, 
         {
-            "location": "/page/#testing-page", 
-            "text": "This page exists simply to demonstrate sub pages with the theme.", 
+            "location": "/user-guide/configuration/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Configuration"
+        }, 
+        {
+            "location": "/user-guide/configuration/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
             "title": "Testing Page"
         }, 
         {
-            "location": "/sub/page/", 
-            "text": "Testing Page\n\n\nThis page exists simply to demonstrate sub pages with the theme.", 
-            "title": "Page"
+            "location": "/user-guide/custom-themes/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Custom themes"
         }, 
         {
-            "location": "/sub/page/#testing-page", 
-            "text": "This page exists simply to demonstrate sub pages with the theme.", 
+            "location": "/user-guide/custom-themes/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/user-guide/deploying-your-docs/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Deploying your docs"
+        }, 
+        {
+            "location": "/user-guide/deploying-your-docs/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/user-guide/styling-your-docs/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Styling your docs"
+        }, 
+        {
+            "location": "/user-guide/styling-your-docs/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/user-guide/writing-your-docs/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Writing your docs"
+        }, 
+        {
+            "location": "/user-guide/writing-your-docs/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/contributing/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/about/contributing/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/license/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "License"
+        }, 
+        {
+            "location": "/about/license/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/release-notes/version-1/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Version 1"
+        }, 
+        {
+            "location": "/about/release-notes/version-1/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Testing Page"
+        }, 
+        {
+            "location": "/about/release-notes/version-2/", 
+            "text": "Testing Page\n\n\nSee the \nHome Page\n. All the other pages are for demonstration purposes\nwith the navigation only.", 
+            "title": "Version 2"
+        }, 
+        {
+            "location": "/about/release-notes/version-2/#testing-page", 
+            "text": "See the  Home Page . All the other pages are for demonstration purposes\nwith the navigation only.", 
             "title": "Testing Page"
         }
     ]

@@ -12,7 +12,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Page - MkDocs Basic theme</title>
+  <title>Configuration - MkDocs Basic theme</title>
 
   <!--
     Support custom favicon support.
@@ -21,6 +21,14 @@
   
     <link rel="shortcut icon" href="../../img/favicon.ico">
   
+
+  <!--
+    You can include external assets of course, but be aware that it means the
+    documentation may not work well offline.
+  -->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+  <link rel="stylesheet" href="../../css/theme.css">
 
   <!--
     extra_ess contains paths to CSS files in the users
@@ -62,39 +70,145 @@
 
   <h1>This is an example theme.</h1>
 
-  <h2>Generate Navigation</h2>
+  <h2>Documentation Navigation</h2>
+
   <!--
     Create the navigation for the documentation.
+
+    Because we don't know how many levels deep the navigation is, it needs to
+    be included in it's own file so it can be recursive. Otherwise the theme
+    can also only support a specific number of levels.
+
+    See the nav.html file for more details about how this works.
   -->
   <ul>
-      
-          
-              <li class="">
-                  <a href="../..">Home</a>
-              </li>
-          
+  
+    <!--
 
-      
-          
-              <li class="">
-                  <a href="../../page/">Page</a>
-              </li>
-          
+-->
 
-      
-          
-              <li>Sub
-                  <ul>
-                  
-                      <li class="current">
-                          <a href="./">Page</a>
-                      </li>
-                  
-                  </ul>
-              </li>
-          
+<li >
+    <a href="../..">Home</a>
+</li>
 
-      
+  
+    <!--
+
+-->
+
+  <li>
+    User guide
+    <ul>
+        
+            <!--
+
+-->
+
+<li class="active">
+    <a href="./">Configuration</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../custom-themes/">Custom themes</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../deploying-your-docs/">Deploying your docs</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../styling-your-docs/">Styling your docs</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../writing-your-docs/">Writing your docs</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+  
+    <!--
+
+-->
+
+  <li>
+    About
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../about/contributing/">Contributing</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+        
+            <!--
+
+-->
+
+  <li>
+    Release notes
+    <ul>
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../about/release-notes/version-1/">Version 1</a>
+</li>
+
+        
+            <!--
+
+-->
+
+<li >
+    <a href="../../about/release-notes/version-2/">Version 2</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+        
+    </ul>
+  </li>
+
+  
   </ul>
 
   <hr/>
@@ -121,8 +235,11 @@
   
     <div>
       
+        <a href="../.." title="Home">&#8592; Previous Page</a>
       
-        <a href="../../page/" title="Page">Previous Page</a>
+      -
+      
+        <a href="../custom-themes/" title="Custom themes"/>Next Page &#8594;</a>
       
     </div>
   
@@ -153,16 +270,17 @@
 
   
     <h1 id="testing-page">Testing Page</h1>
-<p>This page exists simply to demonstrate sub pages with the theme.</p>
+<p>See the <a href="../../">Home Page</a>. All the other pages are for demonstration purposes
+with the navigation only.</p>
   
 
   <hr/>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://www.mkdocs.org">MkDocs</a>.
 
   <!--
-  MkDocs version      : 0.13.0.dev
-  Docs Build Date UTC : 2015-04-25 08:21:19.426754
+  MkDocs version      : 0.14.0
+  Docs Build Date UTC : 2015-06-27 20:31:32.806974
   -->
 
 </body>
