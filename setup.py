@@ -6,7 +6,7 @@ VERSION = '1.0'
 setup(
     name="mkdocs-basic-theme",
     version=VERSION,
-    url='http://www.mkdocs.org',
+    url='https://github.com/mkdocs/mkdocs-basic-theme',
     license='BSD',
     description='Minimal theme for MkDocs',
     author='Dougal Matthews',
