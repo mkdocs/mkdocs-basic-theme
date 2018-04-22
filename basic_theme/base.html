@@ -12,7 +12,7 @@
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
 
   <!--
     Support custom favicon support.
@@ -66,14 +66,14 @@
 
     http://www.mkdocs.org/user-guide/configuration/#google_analytics
   -->
-  {% if google_analytics %}
+  {% if config.google_analytics %}
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '{{ google_analytics[0] }}', '{{ google_analytics[1] }}');
+      ga('create', '{{ config.google_analytics[0] }}', '{{ config.google_analytics[1] }}');
       ga('send', 'pageview');
   </script>
   {% endif %}
@@ -134,16 +134,16 @@
   <!--
     Implement the previous and next links to cycle through the pages.
   -->
-  {% if next_page or previous_page %}
+  {% if page.next_page or page.previous_page %}
     <div>
-      {% if previous_page %}
-        <a href="{{ previous_page.url }}" title="{{ previous_page.title }}">&#8592; Previous Page</a>
+      {% if page.previous_page %}
+        <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}">&#8592; Previous Page</a>
       {% else %}
         &#8592; Previous Page
       {% endif %}
       -
-      {% if next_page %}
-        <a href="{{ next_page.url }}" title="{{ next_page.title }}"/>Next Page &#8594;</a>
+      {% if page.next_page %}
+        <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}"/>Next Page &#8594;</a>
       {% else %}
         Next Page &#8594;
       {% endif %}
@@ -156,13 +156,13 @@
   <!--
     Support repo URL
   -->
-  {% if repo_url %}
-    {% if repo_name == 'GitHub' %}
-      <a href="{{ repo_url }}"> Edit on GitHub</a>
-    {% elif repo_name == 'Bitbucket' %}
-      <a href="{{ repo_url }}"> Edit on BitBucket</a>
+  {% if config.repo_url %}
+    {% if config.repo_name == 'GitHub' %}
+      <a href="{{ config.repo_url }}"> Edit on GitHub</a>
+    {% elif config.repo_name == 'Bitbucket' %}
+      <a href="{{ config.repo_url }}"> Edit on BitBucket</a>
     {% else %}
-      <a href="{{ repo_url }}"> Edit in Repository</a>
+      <a href="{{ config.repo_url }}"> Edit in Repository</a>
     {% endif %}
   {% endif %}
 
@@ -170,7 +170,7 @@
 
   <h2>Show the table of contents for the current page</h2>
   <ul>
-  {% for toc_item in toc %}
+  {% for toc_item in page.toc %}
       <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
       {% for toc_item in toc_item.children %}
           <li><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
@@ -181,7 +181,7 @@
   <hr/>
 
   {% block content %}
-    {{ content }}
+    {{ page.content }}
   {% endblock %}
 
   <hr/>
