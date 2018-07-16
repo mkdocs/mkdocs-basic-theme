@@ -1,7 +1,5 @@
 site_name: MkDocs Basic theme
 theme:
-    name: null
-    custom_dir: basic_theme
-    include_search_page: true
+    name: basictheme
 
 repo_url: https://github.com/d0ugal/mkdocs-basic-theme
