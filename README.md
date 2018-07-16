@@ -6,11 +6,21 @@ example rather than an example of a usable theme.
 
 https://mkdocs.github.io/mkdocs-basic-theme/
 
-[![PyPI Downloads][pypi-dl-image]][pypi-dl-link]
 [![PyPI Version][pypi-v-image]][pypi-v-link]
 
-[pypi-dl-image]: https://img.shields.io/pypi/dm/mkdocs-basic-theme.png
-[pypi-dl-link]: https://pypi.python.org/pypi/mkdocs-basic-theme
 [pypi-v-image]: https://img.shields.io/pypi/v/mkdocs-basic-theme.png
 [pypi-v-link]: https://pypi.python.org/pypi/mkdocs-basic-theme
 
+## Release Notes
+
+### Version 1.2
+
+Updated for MkDocs version 1.0.
+
+### Version 1.0.1
+
+Minor adjustments to description, etc.
+
+### Version 1.0
+
+Initial Release
