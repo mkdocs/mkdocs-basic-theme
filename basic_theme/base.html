@@ -15,14 +15,10 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
 
   <!--
-    Support custom favicon support.
-    http://www.mkdocs.org/user-guide/configuration/#site_favicon
+    Just add a favicon.ico image to the docs.
   -->
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ favicon }}">
-  {% else %}
-    <link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">
-  {% endif %}
+     <link rel="shortcut icon" href="{{ "img/favicon.ico"|url }}">
+
 
   <!--
     You can include external assets of course, but be aware that it means the
@@ -30,7 +26,7 @@
   -->
   <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
 
-  <link rel="stylesheet" href="{{ base_url }}/css/theme.css">
+  <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
 
   <!--
     extra_ess contains paths to CSS files in the users
@@ -39,8 +35,8 @@
 
     http://www.mkdocs.org/user-guide/configuration/#extra_css
   -->
-  {% for path in extra_css %}
-    <link href="{{ path }}" rel="stylesheet">
+  {% for path in config.extra_css %}
+    <link href="{{ path|url }}" rel="stylesheet">
   {% endfor %}
 
   <!--
@@ -48,7 +44,14 @@
     {{ base_url }} beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script src="{{ base_url }}/js/theme.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="{{ "js/theme.js"|url }}></script>
+
+  {% block extrahead %}
+  {% endblock %}
 
   <!--
     extra_javascript contains paths to JavaScript files in the
@@ -57,8 +60,8 @@
 
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
-  {% for path in extra_javascript %}
-    <script src="{{ path }}"></script>
+  {% for path in config.extra_javascript %}
+    <script src="{{ path|url }}"></script>
   {% endfor %}
 
   <!--
@@ -78,8 +81,6 @@
   </script>
   {% endif %}
 
-  {% block extrahead %}
-  {% endblock %}
 </head>
 
 <body>
@@ -123,7 +124,7 @@
     action and methods match below.
   -->
   <div role="search">
-    <form action="{{ base_url }}/search.html" method="get">
+    <form action="{{ "search.html"|url }}" method="get">
       <input type="search" name="q" placeholder="Search docs" />
     </form>
   </div>
@@ -137,13 +138,13 @@
   {% if page.next_page or page.previous_page %}
     <div>
       {% if page.previous_page %}
-        <a href="{{ page.previous_page.url }}" title="{{ page.previous_page.title }}">&#8592; Previous Page</a>
+        <a href="{{ page.previous_page.url|url }}" title="{{ page.previous_page.title }}">&#8592; Previous Page</a>
       {% else %}
         &#8592; Previous Page
       {% endif %}
       -
       {% if page.next_page %}
-        <a href="{{ page.next_page.url }}" title="{{ page.next_page.title }}"/>Next Page &#8594;</a>
+        <a href="{{ page.next_page.url|url }}" title="{{ page.next_page.title }}"/>Next Page &#8594;</a>
       {% else %}
         Next Page &#8594;
       {% endif %}
@@ -156,14 +157,10 @@
   <!--
     Support repo URL
   -->
-  {% if config.repo_url %}
-    {% if config.repo_name == 'GitHub' %}
-      <a href="{{ config.repo_url }}"> Edit on GitHub</a>
-    {% elif config.repo_name == 'Bitbucket' %}
-      <a href="{{ config.repo_url }}"> Edit on BitBucket</a>
-    {% else %}
-      <a href="{{ config.repo_url }}"> Edit in Repository</a>
-    {% endif %}
+  {% if page and page.edit_url %}
+    <a href="{{ page.edit_url }}">Edit on {{ config.repo_name }}</a>
+  {% elif config.repo_url %}
+    <a href="{{ config.repo_url }}">{{ config.repo_name }}</a>
   {% endif %}
 
   <hr/>
