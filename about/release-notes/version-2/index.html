@@ -7,26 +7,27 @@
 -->
 <!DOCTYPE html>
 <head>
-
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <!--
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
   -->
-  <title>Version 2 - MkDocs Basic theme</title>
+  <title>Version 2 Release Notes - MkDocs Basic theme</title>
 
   <!--
-    Support custom favicon support.
-    http://www.mkdocs.org/user-guide/configuration/#site_favicon
+    Just add a favicon.ico image to the docs.
   -->
-  
-    <link rel="shortcut icon" href="../../../img/favicon.ico">
-  
+     <link rel="shortcut icon" href="../../../img/favicon.ico">
+
 
   <!--
     You can include external assets of course, but be aware that it means the
     documentation may not work well offline.
   -->
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 
   <link rel="stylesheet" href="../../../css/theme.css">
 
@@ -44,7 +45,14 @@
     ../../.. beforehand which will be the relative path to
     the root of the documentation.
   -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
   <script src="../../../js/theme.js"></script>
+
+  
+  
 
   <!--
     extra_javascript contains paths to JavaScript files in the
@@ -54,6 +62,8 @@
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
   
+    <script src="../../../search/main.js"></script>
+  
 
   <!--
     Include Google Analytics tracking code.
@@ -62,8 +72,6 @@
   -->
   
 
-  
-  
 </head>
 
 <body>
@@ -98,7 +106,7 @@
 -->
 
 <li >
-    <a href="../../..">Home</a>
+    <a href="../../..">MkDocs Basic Theme</a>
 </li>
 
   
@@ -141,7 +149,7 @@
 -->
 
 <li >
-    <a href="../version-1/">Version 1</a>
+    <a href="../version-1/">Version 1 Release Notes</a>
 </li>
 
         
@@ -150,7 +158,7 @@
 -->
 
 <li class="active">
-    <a href="./">Version 2</a>
+    <a href="./">Version 2 Release Notes</a>
 </li>
 
         
@@ -184,7 +192,7 @@
 -->
 
 <li >
-    <a href="../../../user-guide/custom-themes/">Custom themes</a>
+    <a href="../../../user-guide/custom-themes/">Custom Themes</a>
 </li>
 
         
@@ -193,7 +201,7 @@
 -->
 
 <li >
-    <a href="../../../user-guide/deploying-your-docs/">Deploying your docs</a>
+    <a href="../../../user-guide/deploying-your-docs/">Deploying Your Docs</a>
 </li>
 
         
@@ -202,7 +210,7 @@
 -->
 
 <li >
-    <a href="../../../user-guide/styling-your-docs/">Styling your docs</a>
+    <a href="../../../user-guide/styling-your-docs/">Styling Your Docs</a>
 </li>
 
         
@@ -211,7 +219,7 @@
 -->
 
 <li >
-    <a href="../../../user-guide/writing-your-docs/">Writing your docs</a>
+    <a href="../../../user-guide/writing-your-docs/">Writing Your Docs</a>
 </li>
 
         
@@ -232,7 +240,7 @@
   -->
   <div role="search">
     <form action="../../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" />
+      <input type="search" name="q" placeholder="Search docs" />
     </form>
   </div>
 
@@ -245,7 +253,7 @@
   
     <div>
       
-        <a href="../version-1/" title="Version 1">&#8592; Previous Page</a>
+        <a href="../version-1/" title="Version 1 Release Notes">&#8592; Previous Page</a>
       
       -
       
@@ -261,9 +269,7 @@
     Support repo URL
   -->
   
-    
-      <a href="https://github.com/d0ugal/mkdocs-basic-theme"> Edit on GitHub</a>
-    
+    <a href="https://github.com/d0ugal/mkdocs-basic-theme/edit/master/docs/about/release-notes/version-2.md">Edit on GitHub</a>
   
 
   <hr/>
@@ -280,17 +286,17 @@
 
   
     <h1 id="testing-page">Testing Page</h1>
-<p>See the <a href="../../../">Home Page</a>. All the other pages are for demonstration purposes
+<p>See the <a href="/">Home Page</a>. All the other pages are for demonstration purposes
 with the navigation only.</p>
   
 
   <hr/>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a>.
+  Built with <a href="https://www.mkdocs.org">MkDocs</a>.
 
   <!--
-  MkDocs version      : 0.15.0.dev
-  Docs Build Date UTC : 2015-06-27 22:11:02.850908
+  MkDocs version      : 1.0
+  Docs Build Date UTC : 2018-08-03 17:17:09
   -->
 
 </body>

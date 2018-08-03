@@ -7,7 +7,10 @@
 -->
 <!DOCTYPE html>
 <head>
-
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <!--
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
@@ -15,18 +18,16 @@
   <title>MkDocs Basic theme</title>
 
   <!--
-    Support custom favicon support.
-    http://www.mkdocs.org/user-guide/configuration/#site_favicon
+    Just add a favicon.ico image to the docs.
   -->
-  
-    <link rel="shortcut icon" href="./img/favicon.ico">
-  
+     <link rel="shortcut icon" href="./img/favicon.ico">
+
 
   <!--
     You can include external assets of course, but be aware that it means the
     documentation may not work well offline.
   -->
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 
   <link rel="stylesheet" href="./css/theme.css">
 
@@ -44,7 +45,15 @@
     . beforehand which will be the relative path to
     the root of the documentation.
   -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
   <script src="./js/theme.js"></script>
+
+  
+  <script>var base_url = '.';</script>
+
 
   <!--
     extra_javascript contains paths to JavaScript files in the
@@ -54,6 +63,8 @@
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
   
+    <script src="./search/main.js"></script>
+  
 
   <!--
     Include Google Analytics tracking code.
@@ -61,10 +72,6 @@
     http://www.mkdocs.org/user-guide/configuration/#google_analytics
   -->
   
-
-  
-  <script>var base_url = '.';</script>
-  <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
 
 </head>
 
@@ -100,7 +107,7 @@
 -->
 
 <li >
-    <a href=".">Home</a>
+    <a href="./.">MkDocs Basic Theme</a>
 </li>
 
   
@@ -117,7 +124,7 @@
 -->
 
 <li >
-    <a href="about/contributing/">Contributing</a>
+    <a href="./about/contributing/">Contributing</a>
 </li>
 
         
@@ -126,7 +133,7 @@
 -->
 
 <li >
-    <a href="about/license/">License</a>
+    <a href="./about/license/">License</a>
 </li>
 
         
@@ -143,7 +150,7 @@
 -->
 
 <li >
-    <a href="about/release-notes/version-1/">Version 1</a>
+    <a href="./about/release-notes/version-1/">Version 1 Release Notes</a>
 </li>
 
         
@@ -152,7 +159,7 @@
 -->
 
 <li >
-    <a href="about/release-notes/version-2/">Version 2</a>
+    <a href="./about/release-notes/version-2/">Version 2 Release Notes</a>
 </li>
 
         
@@ -177,7 +184,7 @@
 -->
 
 <li >
-    <a href="user-guide/configuration/">Configuration</a>
+    <a href="./user-guide/configuration/">Configuration</a>
 </li>
 
         
@@ -186,7 +193,7 @@
 -->
 
 <li >
-    <a href="user-guide/custom-themes/">Custom themes</a>
+    <a href="./user-guide/custom-themes/">Custom Themes</a>
 </li>
 
         
@@ -195,7 +202,7 @@
 -->
 
 <li >
-    <a href="user-guide/deploying-your-docs/">Deploying your docs</a>
+    <a href="./user-guide/deploying-your-docs/">Deploying Your Docs</a>
 </li>
 
         
@@ -204,7 +211,7 @@
 -->
 
 <li >
-    <a href="user-guide/styling-your-docs/">Styling your docs</a>
+    <a href="./user-guide/styling-your-docs/">Styling Your Docs</a>
 </li>
 
         
@@ -213,7 +220,7 @@
 -->
 
 <li >
-    <a href="user-guide/writing-your-docs/">Writing your docs</a>
+    <a href="./user-guide/writing-your-docs/">Writing Your Docs</a>
 </li>
 
         
@@ -234,7 +241,7 @@
   -->
   <div role="search">
     <form action="./search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" />
+      <input type="search" name="q" placeholder="Search docs" />
     </form>
   </div>
 
@@ -253,9 +260,7 @@
     Support repo URL
   -->
   
-    
-      <a href="https://github.com/d0ugal/mkdocs-basic-theme"> Edit on GitHub</a>
-    
+    <a href="https://github.com/d0ugal/mkdocs-basic-theme/">GitHub</a>
   
 
   <hr/>
@@ -284,11 +289,11 @@
 
   <hr/>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a>.
+  Built with <a href="https://www.mkdocs.org">MkDocs</a>.
 
   <!--
-  MkDocs version      : 0.15.0.dev
-  Docs Build Date UTC : 2015-06-27 22:11:02.801725
+  MkDocs version      : 1.0
+  Docs Build Date UTC : 2018-08-03 17:17:09
   -->
 
 </body>
