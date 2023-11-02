@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mkdocs-basic-theme"
+version = "1.1"
+description = "Minimal theme for MkDocs"
+readme = "README.md"
+license = "BSD-2-Clause"
+authors = [
+    {name = "Dougal Matthews", email = "dougal@dougalmatthews.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: MkDocs",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+]
+dependencies = [
+    "mkdocs >= 1.5",
+]
+
+[project.urls]
+Source = "https://github.com/mkdocs/mkdocs-basic-theme"
+
+[project.entry-points."mkdocs.themes"]
+basictheme = "basic_theme"
+
+[tool.hatch.build]
+include = ["/basic_theme"]

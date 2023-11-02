@@ -1,5 +1,5 @@
 site_name: MkDocs Basic theme
+repo_url: https://github.com/mkdocs/mkdocs-basic-theme
+
 theme:
     name: basictheme
-
-repo_url: https://github.com/d0ugal/mkdocs-basic-theme
