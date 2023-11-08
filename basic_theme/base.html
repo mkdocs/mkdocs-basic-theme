@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <!--
     The page_title contains the title for a page as shown in the navigation.
     Site name contains the name as defined in the mkdocs.yml
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="{{ "css/theme.css"|url }}">
 
   <!--
-    extra_ess contains paths to CSS files in the users
+    extra_css contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
     their mkdocs.yml.
 
@@ -42,15 +42,15 @@
     <link href="{{ path|url }}" rel="stylesheet">
   {% endfor %}
 
-  <!--
-    To include static assets from our theme, just add
-    {{ base_url }} beforehand which will be the relative path to
-    the root of the documentation.
-  -->
   <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
+
+  <!--
+    To include static assets from our theme, just make the path
+    relative to the root of the documentation with `|url`.
+  -->
   <script src="{{ "js/theme.js"|url }}"></script>
 
   {% block extrahead %}
@@ -63,8 +63,8 @@
 
     http://www.mkdocs.org/user-guide/configuration/#extra_javascript
   -->
-  {% for path in config.extra_javascript %}
-    <script src="{{ path|url }}"></script>
+  {% for script in config.extra_javascript %}
+    {{ script | script_tag }}
   {% endfor %}
 
   <!--
